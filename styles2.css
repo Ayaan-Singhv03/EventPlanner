@@ -1,5 +1,5 @@
 body {
-    background: url(./hologram-ui.jpg);
+    background: url('./hologram-ui.jpg');
     text-align: center;
     margin: 0;
     padding: 20px;
