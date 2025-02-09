@@ -11,6 +11,13 @@
         <h1>EVENT PLANNER</h1>
         <p>Plan your event with ease!</p>
 
+        <div class="event-title">
+        <label>Event Title:</label>
+    <input type="text" id="eventTitle" placeholder="Enter event title">
+        </div>
+        <br><br>
+
+
         <div class="card">
             <h2>Attendee List</h2>
             <input type="text" id="attendeeInput" placeholder="Add attendee">
@@ -35,6 +42,7 @@
 
         <div id="eventDetails" class="hidden">
             <h2>Event Finalized</h2>
+            <p><strong>Title:</strong> <span id="finalTitle"></span></p>
             <h3><strong>Date:</strong> <span id="selectedDate"></span></h3>
             <p><strong>Attendees:</strong></p>
             <ul id="finalAttendees" class="attendee-grid"></ul>
