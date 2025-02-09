@@ -1,5 +1,5 @@
 body {
-    background: url(hologram-ui.jpg);
+    background: url(/hologram-ui.jpg);
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -23,6 +23,13 @@ body {
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+}
+
+.event-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1d120e;
+    margin-bottom: 10px;
 }
 
 .card:hover {
@@ -99,7 +106,7 @@ ul li {
 
 #finalAttendees li {
     background: #444;
-    color: white;
+    color: rgb(6, 5, 5);
     padding: 10px 15px;
     border-radius: 5px;
     text-align: center;
@@ -116,4 +123,14 @@ ul li {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+#eventDetails{
+    max-width: 600px;
+    margin: auto;
+    background: linear-gradient(135deg, #27272797, #2f1e1e);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
 }
