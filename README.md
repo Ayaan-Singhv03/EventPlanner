@@ -4,6 +4,7 @@
 This is a web-based event management system that allows users to create and manage events by adding attendees, selecting a venue, checking weather conditions, and scheduling the event in Calendar.
 
 ## Features
+-Enter a title for the event.
 - Add and remove attendees.
 - Fetch venue suggestions using the Foursquare API.
 - Retrieve weather information from the OpenWeather API.
@@ -30,10 +31,11 @@ Replace the placeholders in the code with your actual API keys:
 Open `index.html` in a web browser to start using the event management system.
 
 ## How to Use
-1. Enter attendee names and add them to the list.
-2. Search for a venue and select one from the suggestions.
-3. Check the weather at the selected venue.
-4. Choose an event date.
+1. Enter the event title.
+2. Enter attendee names and add them to the list.
+3. Search for a venue and select one from the suggestions.
+4. Check the weather at the selected venue.
+5. Choose an event date.
 6. Schedule the event in Calendar.
 7. Generate and download an event summary.
 
