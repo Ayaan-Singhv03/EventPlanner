@@ -9,10 +9,12 @@ const attendeeInput = document.getElementById("attendeeInput");
 const venueSearch = document.getElementById("venueSearch");
 const venueList = document.getElementById("venueList");
 const eventDate = document.getElementById("eventDate");
+const eventTitle = document.getElementById("eventTitle");
 const eventDetails = document.getElementById("eventDetails");
 const selectedDate = document.getElementById("selectedDate");
 const selectedVenue = document.getElementById("selectedVenue");
 const finalAttendees = document.getElementById("finalAttendees");
+const finalTitle = document.getElementById("finalTitle");
 
 let attendees = [];
 let selectedVenueData = null;
@@ -115,10 +117,11 @@ function downloadEventSummary() {
 
 // Finalize Event
 function finalizeEvent() {
-    if (!eventDate.value || attendees.length === 0 || !selectedVenueData) {
-        alert("Please select a date, add attendees, and choose a venue before finalizing.");
+    if (!eventDate.value || !eventTitle.value || attendees.length === 0 || !selectedVenueData) {
+        alert("Please enter a title, select a date, add attendees, and choose a venue before finalizing.");
         return;
     }
+    finalTitle.textContent = eventTitle.value;
     selectedDate.textContent = eventDate.value;
     finalAttendees.innerHTML = attendees.map((name) => `<li>${name}</li>`).join("");
     selectedVenue.textContent = selectedVenueData;
