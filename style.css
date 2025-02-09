@@ -1,0 +1,64 @@
+/* Reset Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: rgb(0, 0, 0);
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background: #f5f5f5;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background: white;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background: #2575fc;
+}

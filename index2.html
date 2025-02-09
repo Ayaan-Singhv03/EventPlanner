@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EVENT PLANNER</h1>
+        <p>Plan your event with ease!</p>
+
+        <div class="card">
+            <h2>Attendee List</h2>
+            <input type="text" id="attendeeInput" placeholder="Add attendee">
+            <button onclick="addAttendee()">Add</button>
+            <ul id="attendeeList"></ul>
+        </div>
+
+        <div class="card">
+            <h2>Select Date</h2>
+            <input type="date" id="eventDate">
+        </div>
+
+        <div class="card">
+            <h2>Find a Venue</h2>
+            <input type="text" id="venueSearch" placeholder="Search location">
+            <button onclick="fetchVenues()">Search</button>
+            <ul id="venueList"></ul>
+        </div>
+
+        <button id="finalizeEvent" onclick="finalizeEvent()">Finalize Event</button>
+        <button onclick="downloadEventSummary()">Download Summary</button>
+
+        <div id="eventDetails" class="hidden">
+            <h2>Event Finalized</h2>
+            <h3><strong>Date:</strong> <span id="selectedDate"></span></h3>
+            <p><strong>Attendees:</strong></p>
+            <ul id="finalAttendees" class="attendee-grid"></ul>
+            <p><strong>Venue:</strong> <span id="selectedVenue"></span></p>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
